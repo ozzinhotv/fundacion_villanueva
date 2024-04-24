@@ -1,0 +1,41 @@
+.vidaTitle {
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px;
+    background-color: #ff0505;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 40px; /* Espacio a la izquierda de la línea de tiempo */
+  }
+  
+  .period {
+    position: relative;
+    padding: 20px 40px; /* Espacio alrededor de cada período */
+  }
+  
+  .period:before {
+    content: "";
+    position: absolute;
+    left: -20px; /* Posición del punto de la línea */
+    top: 50%; /* Centra el punto verticalmente */
+    transform: translateY(-50%);
+    width: 10px; /* Tamaño del punto de la línea */
+    height: 10px;
+    border-radius: 50%; /* Para hacer un círculo */
+    background-color: #333; /* Color del punto de la línea */
+  }
+  
+  .period-content {
+    display: flex; /* Para alinear la imagen y el texto horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+  }
+  
+  .period-content img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Para mantener la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+  }
+  
